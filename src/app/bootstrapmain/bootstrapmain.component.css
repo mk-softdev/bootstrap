@@ -1,0 +1,44 @@
+#menu nav ul{
+    list-style: none;
+}
+
+#menu nav ul li{
+    /* list-style: none; */
+    display: inline-block;
+    margin-left:20px;
+    padding-top:10px;
+}
+
+#menu nav ul li a{
+    text-decoration: none;
+    color:white !important;
+
+}
+
+
+@media (max-width:560px) {
+    #menu nav::before{
+        content: url('../../assets/Hamburger_icon.svg');
+        /* list-style: none; */
+        
+        
+    }   
+
+
+    #menu nav ul{
+        /* list-style: none; */
+        display: none;
+        display: block;
+    position: relative;
+    right: 48px;
+    margin: 0.34em;
+    font-weight: bold;
+    border-top: 2px solid silver;
+    }   
+    #menu nav ul li{
+        /* list-style: none; */
+        display: block;
+        margin-left:20px;
+        padding-top:10px;
+    }   
+}
